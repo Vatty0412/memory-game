@@ -53,7 +53,6 @@ function App() {
         setTimeout(() => {
             setSolved((prev) => (card1.value === card2.value ? [...prev, card1, card2] : prev));
             setFlipped([]);
-            setDisabled(false);
         }, 1000);
 
     }, [flipped]);
